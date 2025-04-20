@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}My Site{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-600">MySite</div>
+      <ul class="flex space-x-6">
+        <li>
+          <a href="{% url 'home' %}" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+        </li>
+        
+        <li>
+          <a href="{% url 'contact' %}" class="text-gray-700 hover:text-blue-600 font-medium transition">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <main class="p-6">
+    {% block content %}
+    {% endblock %}
+  </main>
+
+</body>
+</html>

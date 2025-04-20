@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{%block content%}
+<h1> this is home page </h1>
+{%for student in students%}
+Name:{{student.name}}
+<br>
+Age:{{student.age}}
+<br>
+Adress:{{student.address}}
+<br>
+<hr>
+{%endfor%}
+<form method ="post">
+  {% csrf_token %}
+  <label for="username">Username:</label><br>
+  <input type="text" placeholder="username" name="username"><br>
+  <button>Submit</button>
+
+</form>
+{%endblock content%}

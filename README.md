@@ -102,7 +102,10 @@ class Contact(models.Model):
 ---
 
 ## 📸 Screenshot
-![Contact us](https://github.com/user-attachments/assets/b140f58d-e999-497a-8c44-fb17ef20653b)
+![Contact us](https://github.com/user-attachments/assets/0a024336-69f1-4da5-a7e2-3e470f3c37df)
+![sucessful contact](https://github.com/user-attachments/assets/54f02d60-de57-4a8c-a5a9-11344e9bdfc5)
+
+
 
 
 
